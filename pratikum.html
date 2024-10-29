@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown Blurred Effect with Animated Circle</title>
+    <link rel="stylesheet" href="pratikum.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"> <!-- Add Font Awesome -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class=" atas">
+        <nav>   
+            <ul>
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="about.html">Tentang</a></li>
+                <li><a href="news.html">Berita</a></li>
+                <li><a href="gallery.html">Galeri</a></li>
+                <li><a href="pratikum.html">Praktikum</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="animated-circle"></div> <!-- Lingkaran animasi di background -->
+    
+
+    <div class="container">
+        <h1>PRAKTIKUM</h1>
+        <!-- dropdown pertama -->
+        <div class="card">
+            <div class="card-header" onclick="toggleDropdown('dropdown1')">
+                <h2>Algoritma dan Pemrograman</h2>
+                <span class="dropdown-icon">&#9662;</span>
+            </div>
+            <div id="dropdown1" class="dropdown-content">
+                <div class="description-box">
+                    <p>Praktikum Algoritma Pemrograman adalah pembelajaran dasar logika pemrograman dan algoritma untuk memecahkan masalah melalui kode. Mahasiswa belajar struktur data, kontrol alur, dan pemrograman modular untuk membangun keterampilan analitis dalam penyusunan program yang efisien.</p>
+                </div>
+                
+                <p>
+                    Modul Praktikum Algoritma dan Pemrograman 1 
+                    <a href="javascript:void(0);" onclick="showNotification()" title="Open PDF"><i class="fas fa-folder-open"></i></a> 
+                    <a href="javascript:void(0);" onclick="showNotification()" title="Download PDF"><i class="fas fa-download"></i></a>
+                </p>
+                <p id="modul-status" style="color: red; font-weight: bold;"></p>
+
+                    Modul Praktikum Algoritma dan Pemrograman 2 
+                    <a href="javascript:void(0);" onclick="showNotification()" title="Open PDF"><i class="fas fa-folder-open"></i></a> 
+                    <a href="javascript:void(0);" onclick="showNotification()" title="Download PDF"><i class="fas fa-download"></i></a>
+                </p>
+                <p>
+                    Modul Praktikum Algoritma dan Pemrograman 3 
+                    <a href="javascript:void(0);" onclick="showNotification()" title="Open PDF"><i class="fas fa-folder-open"></i></a> 
+                    <a href="javascript:void(0);" onclick="showNotification()" title="Download PDF"><i class="fas fa-download"></i></a>
+                </p>
+                <p>
+                    Modul Praktikum Algoritma dan Pemrograman 4 
+                    <a href="javascript:void(0);" onclick="showNotification()" title="Open PDF"><i class="fas fa-folder-open"></i></a> 
+                    <a href="javascript:void(0);" onclick="showNotification()" title="Download PDF"><i class="fas fa-download"></i></a>
+                </p>
+                <p>
+                    Modul Praktikum Algoritma dan Pemrograman 5 
+                    <a href="javascript:void(0);" onclick="showNotification()" title="Open PDF"><i class="fas fa-folder-open"></i></a> 
+                    <a href="javascript:void(0);" onclick="showNotification()" title="Download PDF"><i class="fas fa-download"></i></a>
+                </p>
+                <p>
+                    Modul Praktikum Algoritma dan Pemrograman 6 
+                    <a href="javascript:void(0);" onclick="showNotification()" title="Open PDF"><i class="fas fa-folder-open"></i></a> 
+                    <a href="javascript:void(0);" onclick="showNotification()" title="Download PDF"><i class="fas fa-download"></i></a>
+                </p>
+                <p>
+                    Modul Praktikum Algoritma dan Pemrograman 7 
+                    <a href="javascript:void(0);" onclick="showNotification()" title="Open PDF"><i class="fas fa-folder-open"></i></a> 
+                    <a href="javascript:void(0);" onclick="showNotification()" title="Download PDF"><i class="fas fa-download"></i></a>
+                </p>
+                <p>
+                    Modul Praktikum Algoritma dan Pemrograman 8 
+                    <a href="javascript:void(0);" onclick="showNotification()" title="Open PDF"><i class="fas fa-folder-open"></i></a> 
+                    <a href="javascript:void(0);" onclick="showNotification()" title="Download PDF"><i class="fas fa-download"></i></a>
+                </p>
+                <!-- Tambahkan konten lain sesuai kebutuhan -->
+                 
+            </div>
+        </div>
+
+        <!-- dropdown kedua -->
+        <div class="card">
+            <div class="card-header" onclick="toggleDropdown('dropdown2')">
+                <h2>Struktur Data</h2>
+                <span class="dropdown-icon">&#9662;</span>
+            </div>
+            <div id="dropdown2" class="dropdown-content">
+                <div class="description-box">
+                    <p>Mempelajari cara mengelola dan mengatur data dalam bentuk yang efisien, seperti list, stack, queue, tree, dan graph, serta implementasinya dalam algoritma.</p>
+                </div>
+                <p>
+                    Modul Praktikum Struktur Data 1 
+                    <a href="javascript:void(0);" onclick="showNotification()" title="Open PDF"><i class="fas fa-folder-open"></i></a> 
+                    <a href="javascript:void(0);" onclick="showNotification()" title="Download PDF"><i class="fas fa-download"></i></a>
+                </p>
+                <p>
+                    Modul Praktikum Struktur Data 2 
+                    <a href="javascript:void(0);" onclick="showNotification()" title="Open PDF"><i class="fas fa-folder-open"></i></a> 
+                    <a href="javascript:void(0);" onclick="showNotification()" title="Download PDF"><i class="fas fa-download"></i></a>
+                </p>
+                <p>
+                    Modul Praktikum Struktur Data 3 
+                    <a href="javascript:void(0);" onclick="showNotification()" title="Open PDF"><i class="fas fa-folder-open"></i></a> 
+                    <a href="javascript:void(0);" onclick="showNotification()" title="Download PDF"><i class="fas fa-download"></i></a>
+                </p>
+                <p>
+                    Modul Praktikum Struktur Data 4 
+                    <a href="javascript:void(0);" onclick="showNotification()" title="Open PDF"><i class="fas fa-folder-open"></i></a> 
+                    <a href="javascript:void(0);" onclick="showNotification()" title="Download PDF"><i class="fas fa-download"></i></a>
+                </p>
+                <p>
+                    Modul Praktikum Struktur Data 5 
+                    <a href="javascript:void(0);" onclick="showNotification()" title="Open PDF"><i class="fas fa-folder-open"></i></a> 
+                    <a href="javascript:void(0);" onclick="showNotification()" title="Download PDF"><i class="fas fa-download"></i></a>
+                </p>
+                <p>
+                    Modul Praktikum Struktur Data 6 
+                    <a href="javascript:void(0);" onclick="showNotification()" title="Open PDF"><i class="fas fa-folder-open"></i></a> 
+                    <a href="javascript:void(0);" onclick="showNotification()" title="Download PDF"><i class="fas fa-download"></i></a>
+                </p>
+                <p>
+                    Modul Praktikum Struktur Data 7 
+                    <a href="javascript:void(0);" onclick="showNotification()" title="Open PDF"><i class="fas fa-folder-open"></i></a> 
+                    <a href="javascript:void(0);" onclick="showNotification()" title="Download PDF"><i class="fas fa-download"></i></a>
+                </p>
+                <p>
+                    Modul Praktikum Struktur Data 8 
+                    <a href="javascript:void(0);" onclick="showNotification()" title="Open PDF"><i class="fas fa-folder-open"></i></a> 
+                    <a href="javascript:void(0);" onclick="showNotification()" title="Download PDF"><i class="fas fa-download"></i></a>
+                </p>
+                <!-- Tambahkan konten lain sesuai kebutuhan -->
+                 
+            </div>
+        </div>
+
+        <!-- dropdown ketiga -->
+        <div class="card">
+            <div class="card-header" onclick="toggleDropdown('dropdown3')">
+                <h2>Basis Data</h2>
+                <span class="dropdown-icon">&#9662;</span>
+            </div>
+            <div id="dropdown3" class="dropdown-content">
+                <div class="description-box">
+                    <p>Memahami konsep dan implementasi sistem manajemen basis data, termasuk pemodelan data, penggunaan SQL, dan optimasi query.</p>
+                </div>
+                <p>
+                    Modul Praktikum Basis Data 1 
+                    <a href="javascript:void(0);" onclick="showNotification()" title="Open PDF"><i class="fas fa-folder-open"></i></a> 
+                    <a href="javascript:void(0);" onclick="showNotification()" title="Download PDF"><i class="fas fa-download"></i></a>
+                </p>
+                <p>
+                    Modul Praktikum Basis Data 2 
+                    <a href="javascript:void(0);" onclick="showNotification()" title="Open PDF"><i class="fas fa-folder-open"></i></a> 
+                    <a href="javascript:void(0);" onclick="showNotification()" title="Download PDF"><i class="fas fa-download"></i></a>
+                </p>
+                <p>
+                    Modul Praktikum Basis Data 3 
+                    <a href="3_MODUL_BASISDATA.pdf" target="_blank" title="Open PDF"><i class="fas fa-folder-open"></i></a> 
+                    <a href="3_MODUL_BASISDATA.pdf" download="ALPRO1.pdf" title="Download PDF"><i class="fas fa-download"></i></a>
+                </p>
+                <p>
+                    Modul Praktikum Basis Data 4 
+                    <a href="4_MODUL_BASISDATA.pdf" target="_blank" title="Open PDF"><i class="fas fa-folder-open"></i></a> 
+                    <a href="4_MODUL_BASISDATA.pdf" download="ALPRO1.pdf" title="Download PDF"><i class="fas fa-download"></i></a>
+                </p>
+                <p>
+                    Modul Praktikum Basis Data 5 
+                    <a href="5_MODUL_BASISDATA.pdf" target="_blank" title="Open PDF"><i class="fas fa-folder-open"></i></a> 
+                    <a href="5_MODUL_BASISDATA.pdf" download="ALPRO1.pdf" title="Download PDF"><i class="fas fa-download"></i></a>
+                </p>
+                <p>
+                    Modul Praktikum Basis Data 6 
+                    <a href="6_MODUL_BASISDATA.pdf" target="_blank" title="Open PDF"><i class="fas fa-folder-open"></i></a> 
+                    <a href="6_MODUL_BASISDATA.pdf" download="ALPRO1.pdf" title="Download PDF"><i class="fas fa-download"></i></a>
+                </p>
+                <p>
+                    Modul Praktikum Basis Data 7 
+                    <a href="MODUL_PRAKTIKUM_ALPRO_1.pdf" target="_blank" title="Open PDF"><i class="fas fa-folder-open"></i></a> 
+                    <a href="MODUL_PRAKTIKUM_ALPRO_1.pdf" download="ALPRO1.pdf" title="Download PDF"><i class="fas fa-download"></i></a>
+                </p>
+                <p>
+                    Modul Praktikum Basis Data 8 
+                    <a href="8_MODUL_BASISDATA.pdf" target="_blank" title="Open PDF"><i class="fas fa-folder-open"></i></a> 
+                    <a href="8_MODUL_BASISDATA.pdf" download="ALPRO1.pdf" title="Download PDF"><i class="fas fa-download"></i></a>
+                </p>
+                <!-- Tambahkan konten lain sesuai kebutuhan -->
+                 
+            </div>
+        </div>
+
+        <!-- dropdown keempat -->
+        <div class="card">
+            <div class="card-header" onclick="toggleDropdown('dropdown4')">
+                <h2>Jaringan Komputer</h2>
+                <span class="dropdown-icon">&#9662;</span>
+            </div>
+            <div id="dropdown4" class="dropdown-content">
+                <div class="description-box">
+                    <p>Mengenal dasar-dasar jaringan komputer, termasuk protokol jaringan, arsitektur jaringan, dan teknik komunikasi data.</p>
+                </div>
+                <p>
+                    Modul Praktikum Jaringan Komputer 1 
+                    <a href="javascript:void(0);" onclick="showNotification()" title="Open PDF"><i class="fas fa-folder-open"></i></a> 
+                    <a href="javascript:void(0);" onclick="showNotification()" title="Download PDF"><i class="fas fa-download"></i></a>
+                </p>
+                <p>
+                    Modul Praktikum Jaringan Komputer 2 
+                    <a href="javascript:void(0);" onclick="showNotification()" title="Open PDF"><i class="fas fa-folder-open"></i></a> 
+                    <a href="javascript:void(0);" onclick="showNotification()" title="Download PDF"><i class="fas fa-download"></i></a>
+                </p>
+                <p>
+                    Modul Praktikum Jaringan Komputer 3 
+                    <a href="javascript:void(0);" onclick="showNotification()" title="Open PDF"><i class="fas fa-folder-open"></i></a> 
+                    <a href="javascript:void(0);" onclick="showNotification()" title="Download PDF"><i class="fas fa-download"></i></a>
+                </p>
+                <p>
+                    Modul Praktikum Jaringan Komputer 4 
+                    <a href="Modul 4 Praktikum Jaringan Komputer.pdf" target="_blank" title="Open PDF"><i class="fas fa-folder-open"></i></a> 
+                    <a href="Modul 4 Praktikum Jaringan Komputer.pdf" download="ALPRO1.pdf" title="Download PDF"><i class="fas fa-download"></i></a>
+                </p>
+                <p>
+                    Modul Praktikum Jaringan Komputer 5 
+                    <a href="Modul 5 Praktikum Jaringan Komputer.pdf" target="_blank" title="Open PDF"><i class="fas fa-folder-open"></i></a> 
+                    <a href="Modul 5 Praktikum Jaringan Komputer.pdf" download="ALPRO1.pdf" title="Download PDF"><i class="fas fa-download"></i></a>
+                </p>
+                <p>
+                    Modul Praktikum Jaringan Komputer 6 
+                    <a href="MODUL_PRAKTIKUM_ALPRO_1.pdf" target="_blank" title="Open PDF"><i class="fas fa-folder-open"></i></a> 
+                    <a href="MODUL_PRAKTIKUM_ALPRO_1.pdf" download="ALPRO1.pdf" title="Download PDF"><i class="fas fa-download"></i></a>
+                </p>
+                <p>
+                    Modul Praktikum Jaringan Komputer 7 
+                    <a href="Modul 7 Praktikum Jaringan Komputer.pdf" target="_blank" title="Open PDF"><i class="fas fa-folder-open"></i></a> 
+                    <a href="Modul 7 Praktikum Jaringan Komputer.pdf" download="ALPRO1.pdf" title="Download PDF"><i class="fas fa-download"></i></a>
+                </p>
+                <p>
+                    Modul Praktikum Jaringan Komputer 8 
+                    <a href="Modul 8 Praktikum Jaringan Komputer.pdf" target="_blank" title="Open PDF"><i class="fas fa-folder-open"></i></a> 
+                    <a href="Modul 8 Praktikum Jaringan Komputer.pdf" download="ALPRO1.pdf" title="Download PDF"><i class="fas fa-download"></i></a>
+                </p>
+                <!-- Tambahkan konten lain sesuai kebutuhan -->
+                 
+            </div>
+        </div>
+
+        <!-- dropdown kelima -->
+        <div class="card">
+            <div class="card-header" onclick="toggleDropdown('dropdown5')">
+                <h2>Pemograman Berorientasi Objek</h2>
+                <span class="dropdown-icon">&#9662;</span>
+            </div>
+            <div id="dropdown5" class="dropdown-content">
+                <div class="description-box">
+                    <p>Mengembangkan keterampilan dalam pemrograman menggunakan konsep objek, seperti enkapsulasi, pewarisan, dan polimorfisme dalam bahasa seperti Java atau C++.</p>
+                </div>
+                <p>
+                    Modul Praktikum Pemograman Berorientasi Objek 1 
+                    <a href="MODUL PRAKTIKUM -pbo.pdf" target="_blank" title="Open PDF"><i class="fas fa-folder-open"></i></a> 
+                    <a href="MODUL PRAKTIKUM -pbo.pdf" download="ALPRO1.pdf" title="Download PDF"><i class="fas fa-download"></i></a>
+                </p>
+                <p>
+                    Modul Praktikum Pemograman Berorientasi Objek 2 
+                    <a href="MODUL PRAKTIKUM -pbo #2.pdf" target="_blank" title="Open PDF"><i class="fas fa-folder-open"></i></a> 
+                    <a href="MODUL PRAKTIKUM -pbo #2.pdf" download="ALPRO1.pdf" title="Download PDF"><i class="fas fa-download"></i></a>
+                </p>
+                <p>
+                    Modul Praktikum Pemograman Berorientasi Objek 3 
+                    <a href="javascript:void(0);" onclick="showNotification()" title="Open PDF"><i class="fas fa-folder-open"></i></a> 
+                    <a href="javascript:void(0);" onclick="showNotification()" title="Download PDF"><i class="fas fa-download"></i></a>
+                </p>
+                <p>
+                    Modul Praktikum Pemograman Berorientasi Objek 4 
+                    <a href="javascript:void(0);" onclick="showNotification()" title="Open PDF"><i class="fas fa-folder-open"></i></a> 
+                    <a href="javascript:void(0);" onclick="showNotification()" title="Download PDF"><i class="fas fa-download"></i></a>
+                </p>
+                <p>
+                    Modul Praktikum Pemograman Berorientasi Objek 5 
+                    <a href="javascript:void(0);" onclick="showNotification()" title="Open PDF"><i class="fas fa-folder-open"></i></a> 
+                    <a href="javascript:void(0);" onclick="showNotification()" title="Download PDF"><i class="fas fa-download"></i></a>
+                </p>
+                <p>
+                    Modul Praktikum Pemograman Berorientasi Objek 6 
+                    <a href="javascript:void(0);" onclick="showNotification()" title="Open PDF"><i class="fas fa-folder-open"></i></a> 
+                    <a href="javascript:void(0);" onclick="showNotification()" title="Download PDF"><i class="fas fa-download"></i></a>
+                </p>
+                <p>
+                    Modul Praktikum Pemograman Berorientasi Objek 7 
+                    <a href="javascript:void(0);" onclick="showNotification()" title="Open PDF"><i class="fas fa-folder-open"></i></a> 
+                    <a href="javascript:void(0);" onclick="showNotification()" title="Download PDF"><i class="fas fa-download"></i></a>
+                </p>
+                <p>
+                    Modul Praktikum Pemograman Berorientasi Objek 8 
+                    <a href="javascript:void(0);" onclick="showNotification()" title="Open PDF"><i class="fas fa-folder-open"></i></a> 
+                    <a href="javascript:void(0);" onclick="showNotification()" title="Download PDF"><i class="fas fa-download"></i></a>
+                </p>
+                <!-- Tambahkan konten lain sesuai kebutuhan -->
+                 
+            </div>
+        </div>
+
+        <!-- dropdown keenam -->
+        <div class="card">
+            <div class="card-header" onclick="toggleDropdown('dropdown6')">
+                <h2>Sistem Operasi</h2>
+                <span class="dropdown-icon">&#9662;</span>
+            </div>
+            <div id="dropdown6" class="dropdown-content">
+                <div class="description-box">
+                    <p>Mempelajari cara kerja sistem operasi dalam mengelola hardware dan software, seperti manajemen memori, proses, dan sistem file.</p>
+                </div>
+                <p>
+                    Modul Praktikum Sistem Operasi 1 
+                    <a href="Modul Praktikum 1 - Shell SO.pdf" target="_blank" title="Open PDF"><i class="fas fa-folder-open"></i></a> 
+                    <a href="Modul Praktikum 1 - Shell SO.pdf" download="ALPRO1.pdf" title="Download PDF"><i class="fas fa-download"></i></a>
+                </p>
+                <p>
+                    Modul Praktikum Sistem Operasi 2 
+                    <a href="Modul Praktikum 2 - Shell Script di Ubuntu.pdf" target="_blank" title="Open PDF"><i class="fas fa-folder-open"></i></a> 
+                    <a href="Modul Praktikum 2 - Shell Script di Ubuntu.pdf" download="ALPRO1.pdf" title="Download PDF"><i class="fas fa-download"></i></a>
+                </p>
+                <p>
+                    Modul Praktikum Sistem Operasi 3 
+                    <a href="Modul Praktikum 3 - Pemrograman C di Linux.pdf" target="_blank" title="Open PDF"><i class="fas fa-folder-open"></i></a> 
+                    <a href="Modul Praktikum 3 - Pemrograman C di Linux.pdf" download="ALPRO1.pdf" title="Download PDF"><i class="fas fa-download"></i></a>
+                </p>
+                <p>
+                    Modul Praktikum Sistem Operasi 4 
+                    <a href="javascript:void(0);" onclick="showNotification()" title="Open PDF"><i class="fas fa-folder-open"></i></a> 
+                    <a href="javascript:void(0);" onclick="showNotification()" title="Download PDF"><i class="fas fa-download"></i></a>
+                </p>
+                <p>
+                    Modul Praktikum Sistem Operasi 5 
+                    <a href="javascript:void(0);" onclick="showNotification()" title="Open PDF"><i class="fas fa-folder-open"></i></a> 
+                    <a href="javascript:void(0);" onclick="showNotification()" title="Download PDF"><i class="fas fa-download"></i></a>
+                </p>
+                <p>
+                    Modul Praktikum Sistem Operasi 6 
+                    <a href="javascript:void(0);" onclick="showNotification()" title="Open PDF"><i class="fas fa-folder-open"></i></a> 
+                    <a href="javascript:void(0);" onclick="showNotification()" title="Download PDF"><i class="fas fa-download"></i></a>
+                </p>
+                <p>
+                    Modul Praktikum Sistem Operasi 7 
+                    <a href="javascript:void(0);" onclick="showNotification()" title="Open PDF"><i class="fas fa-folder-open"></i></a> 
+                    <a href="javascript:void(0);" onclick="showNotification()" title="Download PDF"><i class="fas fa-download"></i></a>
+                </p>
+                <p>
+                    Modul Praktikum Sistem Operasi 8 
+                    <a href="javascript:void(0);" onclick="showNotification()" title="Open PDF"><i class="fas fa-folder-open"></i></a> 
+                    <a href="javascript:void(0);" onclick="showNotification()" title="Download PDF"><i class="fas fa-download"></i></a>
+                </p>
+                <!-- Tambahkan konten lain sesuai kebutuhan -->
+                 
+            </div>
+        </div>
+
+        <!-- dropdown ketujuh -->
+        <div class="card">
+            <div class="card-header" onclick="toggleDropdown('dropdown7')">
+                <h2>Pembelajaran Mesin</h2>
+                <span class="dropdown-icon">&#9662;</span>
+            </div>
+            <div id="dropdown7" class="dropdown-content">
+                <div class="description-box">
+                    <p>Pengenalan pada algoritma pembelajaran mesin untuk membangun model yang mampu melakukan prediksi dan analisis data secara otomatis.</p>
+                </div>
+                <p>
+                    Modul Praktikum Pembelajaran Mesin 1 
+                    <a href="javascript:void(0);" onclick="showNotification()" title="Open PDF"><i class="fas fa-folder-open"></i></a> 
+                    <a href="javascript:void(0);" onclick="showNotification()" title="Download PDF"><i class="fas fa-download"></i></a>
+                </p>
+                <p>
+                    Modul Praktikum Pembelajaran Mesin 2 
+                    <a href="javascript:void(0);" onclick="showNotification()" title="Open PDF"><i class="fas fa-folder-open"></i></a> 
+                    <a href="javascript:void(0);" onclick="showNotification()" title="Download PDF"><i class="fas fa-download"></i></a>
+                </p>
+                <p>
+                    Modul Praktikum Pembelajaran Mesin 3 
+                    <a href="javascript:void(0);" onclick="showNotification()" title="Open PDF"><i class="fas fa-folder-open"></i></a> 
+                    <a href="javascript:void(0);" onclick="showNotification()" title="Download PDF"><i class="fas fa-download"></i></a>
+                </p>
+                <p>
+                    Modul Praktikum Pembelajaran Mesin 4 
+                    <a href="javascript:void(0);" onclick="showNotification()" title="Open PDF"><i class="fas fa-folder-open"></i></a> 
+                    <a href="javascript:void(0);" onclick="showNotification()" title="Download PDF"><i class="fas fa-download"></i></a>
+                </p>
+                <p>
+                    Modul Praktikum Pembelajaran Mesin 5 
+                    <a href="javascript:void(0);" onclick="showNotification()" title="Open PDF"><i class="fas fa-folder-open"></i></a> 
+                    <a href="javascript:void(0);" onclick="showNotification()" title="Download PDF"><i class="fas fa-download"></i></a>
+                </p>
+                <p>
+                    Modul Praktikum Pembelajaran Mesin 6 
+                    <a href="javascript:void(0);" onclick="showNotification()" title="Open PDF"><i class="fas fa-folder-open"></i></a> 
+                    <a href="javascript:void(0);" onclick="showNotification()" title="Download PDF"><i class="fas fa-download"></i></a>
+                </p>
+                <p>
+                    Modul Praktikum Pembelajaran Mesin 7 
+                    <a href="javascript:void(0);" onclick="showNotification()" title="Open PDF"><i class="fas fa-folder-open"></i></a> 
+                    <a href="javascript:void(0);" onclick="showNotification()" title="Download PDF"><i class="fas fa-download"></i></a>
+                </p>
+                <p>
+                    Modul Praktikum Pembelajaran Mesin 8 
+                    <a href="javascript:void(0);" onclick="showNotification()" title="Open PDF"><i class="fas fa-folder-open"></i></a> 
+                    <a href="javascript:void(0);" onclick="showNotification()" title="Download PDF"><i class="fas fa-download"></i></a>
+                </p>
+                <!-- Tambahkan konten lain sesuai kebutuhan -->
+                 
+            </div>
+        </div>
+
+        <!-- dropdown kedelapan -->
+        <div class="card">
+            <div class="card-header" onclick="toggleDropdown('dropdown8')">
+                <h2>Pemrograman Web</h2>
+                <span class="dropdown-icon">&#9662;</span>
+            </div>
+            <div id="dropdown8" class="dropdown-content">
+                <div class="description-box">
+                    <p>Membuat aplikasi web dengan memanfaatkan HTML, CSS, JavaScript, serta framework backend dan frontend untuk pengembangan yang dinamis dan responsif.</p>
+                </div>
+                <p>
+                    Modul Praktikum Pemrograman Web 1 
+                    <a href="javascript:void(0);" onclick="showNotification()" title="Open PDF"><i class="fas fa-folder-open"></i></a> 
+                    <a href="javascript:void(0);" onclick="showNotification()" title="Download PDF"><i class="fas fa-download"></i></a>
+                </p>
+                <p>
+                    Modul Praktikum Pemrograman Web 2 
+                    <a href="javascript:void(0);" onclick="showNotification()" title="Open PDF"><i class="fas fa-folder-open"></i></a> 
+                    <a href="javascript:void(0);" onclick="showNotification()" title="Download PDF"><i class="fas fa-download"></i></a>
+                </p>
+                <p>
+                    Modul Praktikum Pemrograman Web 3 
+                    <a href="javascript:void(0);" onclick="showNotification()" title="Open PDF"><i class="fas fa-folder-open"></i></a> 
+                    <a href="javascript:void(0);" onclick="showNotification()" title="Download PDF"><i class="fas fa-download"></i></a>
+                </p>
+                <p>
+                    Modul Praktikum Pemrograman Web 4 
+                    <a href="javascript:void(0);" onclick="showNotification()" title="Open PDF"><i class="fas fa-folder-open"></i></a> 
+                    <a href="javascript:void(0);" onclick="showNotification()" title="Download PDF"><i class="fas fa-download"></i></a>
+                </p>
+                <p>
+                    Modul Praktikum Pemrograman Web 5 
+                    <a href="javascript:void(0);" onclick="showNotification()" title="Open PDF"><i class="fas fa-folder-open"></i></a> 
+                    <a href="javascript:void(0);" onclick="showNotification()" title="Download PDF"><i class="fas fa-download"></i></a>
+                </p>
+                <p>
+                    Modul Praktikum Pemrograman Web 6 
+                    <a href="javascript:void(0);" onclick="showNotification()" title="Open PDF"><i class="fas fa-folder-open"></i></a> 
+                    <a href="javascript:void(0);" onclick="showNotification()" title="Download PDF"><i class="fas fa-download"></i></a>
+                </p>
+                <p>
+                    Modul Praktikum Pemrograman Web 7 
+                    <a href="javascript:void(0);" onclick="showNotification()" title="Open PDF"><i class="fas fa-folder-open"></i></a> 
+                    <a href="javascript:void(0);" onclick="showNotification()" title="Download PDF"><i class="fas fa-download"></i></a>
+                </p>
+                <p>
+                    Modul Praktikum Pemrograman Web 8 
+                    <a href="javascript:void(0);" onclick="showNotification()" title="Open PDF"><i class="fas fa-folder-open"></i></a> 
+                    <a href="javascript:void(0);" onclick="showNotification()" title="Download PDF"><i class="fas fa-download"></i></a>
+                </p>
+                <!-- Tambahkan konten lain sesuai kebutuhan -->
+                 
+            </div>
+        </div>
+
+        <!-- dropdown kesembilan -->
+        <div class="card">
+            <div class="card-header" onclick="toggleDropdown('dropdown9')">
+                <h2>Deep Learning</h2>
+                <span class="dropdown-icon">&#9662;</span>
+            </div>
+            <div id="dropdown9" class="dropdown-content">
+                <div class="description-box">
+                    <p>Menggunakan jaringan saraf dalam untuk memecahkan masalah kompleks, seperti pengenalan gambar atau pemrosesan bahasa alami.</p>
+                </div>
+                <p>
+                    Modul Praktikum Deep Learning 1 
+                    <a href="javascript:void(0);" onclick="showNotification()" title="Open PDF"><i class="fas fa-folder-open"></i></a> 
+                    <a href="javascript:void(0);" onclick="showNotification()" title="Download PDF"><i class="fas fa-download"></i></a>
+                </p>
+                <p>
+                    Modul Praktikum Deep Learning 2 
+                    <a href="javascript:void(0);" onclick="showNotification()" title="Open PDF"><i class="fas fa-folder-open"></i></a> 
+                    <a href="javascript:void(0);" onclick="showNotification()" title="Download PDF"><i class="fas fa-download"></i></a>
+                </p>
+                <p>
+                    Modul Praktikum Deep Learning 3 
+                    <a href="javascript:void(0);" onclick="showNotification()" title="Open PDF"><i class="fas fa-folder-open"></i></a> 
+                    <a href="javascript:void(0);" onclick="showNotification()" title="Download PDF"><i class="fas fa-download"></i></a>
+                </p>
+                <p>
+                    Modul Praktikum Deep Learning 4 
+                    <a href="javascript:void(0);" onclick="showNotification()" title="Open PDF"><i class="fas fa-folder-open"></i></a> 
+                    <a href="javascript:void(0);" onclick="showNotification()" title="Download PDF"><i class="fas fa-download"></i></a>
+                </p>
+                <p>
+                    Modul Praktikum Deep Learning 5 
+                    <a href="javascript:void(0);" onclick="showNotification()" title="Open PDF"><i class="fas fa-folder-open"></i></a> 
+                    <a href="javascript:void(0);" onclick="showNotification()" title="Download PDF"><i class="fas fa-download"></i></a>
+                </p>
+                <p>
+                    Modul Praktikum Deep Learning 6 
+                    <a href="javascript:void(0);" onclick="showNotification()" title="Open PDF"><i class="fas fa-folder-open"></i></a> 
+                    <a href="javascript:void(0);" onclick="showNotification()" title="Download PDF"><i class="fas fa-download"></i></a>
+                </p>
+                <p>
+                    Modul Praktikum Deep Learning 7 
+                    <a href="javascript:void(0);" onclick="showNotification()" title="Open PDF"><i class="fas fa-folder-open"></i></a> 
+                    <a href="javascript:void(0);" onclick="showNotification()" title="Download PDF"><i class="fas fa-download"></i></a>
+                </p>
+                <p>
+                    Modul Praktikum Deep Learning 8 
+                    <a href="javascript:void(0);" onclick="showNotification()" title="Open PDF"><i class="fas fa-folder-open"></i></a> 
+                    <a href="javascript:void(0);" onclick="showNotification()" title="Download PDF"><i class="fas fa-download"></i></a>
+                </p>
+                <!-- Tambahkan konten lain sesuai kebutuhan -->
+                 
+            </div>
+        </div>
+
+        <!-- dropdown kesepuluh -->
+        <div class="card">
+            <div class="card-header" onclick="toggleDropdown('dropdown10')">
+                <h2>Big Data</h2>
+                <span class="dropdown-icon">&#9662;</span>
+            </div>
+            <div id="dropdown10" class="dropdown-content">
+                <div class="description-box">
+                    <p>Mengelola dan menganalisis data dalam jumlah besar menggunakan alat dan teknik seperti Hadoop dan Spark untuk mengambil wawasan yang bermakna.</p>
+                </div>
+                <p>
+                    Modul Praktikum Big Data 1 
+                    <a href="javascript:void(0);" onclick="showNotification()" title="Open PDF"><i class="fas fa-folder-open"></i></a> 
+                    <a href="javascript:void(0);" onclick="showNotification()" title="Download PDF"><i class="fas fa-download"></i></a>
+                </p>
+                <p>
+                    Modul Praktikum Big Data 2 
+                    <a href="javascript:void(0);" onclick="showNotification()" title="Open PDF"><i class="fas fa-folder-open"></i></a> 
+                    <a href="javascript:void(0);" onclick="showNotification()" title="Download PDF"><i class="fas fa-download"></i></a>
+                </p>
+                <p>
+                    Modul Praktikum Big Data 3 
+                    <a href="javascript:void(0);" onclick="showNotification()" title="Open PDF"><i class="fas fa-folder-open"></i></a> 
+                    <a href="javascript:void(0);" onclick="showNotification()" title="Download PDF"><i class="fas fa-download"></i></a>
+                </p>
+                <p>
+                    Modul Praktikum Big Data 4 
+                    <a href="javascript:void(0);" onclick="showNotification()" title="Open PDF"><i class="fas fa-folder-open"></i></a> 
+                    <a href="javascript:void(0);" onclick="showNotification()" title="Download PDF"><i class="fas fa-download"></i></a>
+                </p>
+                <p>
+                    Modul Praktikum Big Data 5 
+                    <a href="javascript:void(0);" onclick="showNotification()" title="Open PDF"><i class="fas fa-folder-open"></i></a> 
+                    <a href="javascript:void(0);" onclick="showNotification()" title="Download PDF"><i class="fas fa-download"></i></a>
+                </p>
+                <p>
+                    Modul Praktikum Big Data 6 
+                    <a href="javascript:void(0);" onclick="showNotification()" title="Open PDF"><i class="fas fa-folder-open"></i></a> 
+                    <a href="javascript:void(0);" onclick="showNotification()" title="Download PDF"><i class="fas fa-download"></i></a>
+                </p>
+                <p>
+                    Modul Praktikum Big Data 7 
+                    <a href="javascript:void(0);" onclick="showNotification()" title="Open PDF"><i class="fas fa-folder-open"></i></a> 
+                    <a href="javascript:void(0);" onclick="showNotification()" title="Download PDF"><i class="fas fa-download"></i></a>
+                </p>
+                <p>
+                    Modul Praktikum Big Data 8 
+                    <a href="javascript:void(0);" onclick="showNotification()" title="Open PDF"><i class="fas fa-folder-open"></i></a> 
+                    <a href="javascript:void(0);" onclick="showNotification()" title="Download PDF"><i class="fas fa-download"></i></a>
+                </p>
+                <!-- Tambahkan konten lain sesuai kebutuhan -->
+                 
+            </div>
+        </div>
+
+        <!-- dropdown kesebelas -->
+        <div class="card">
+            <div class="card-header" onclick="toggleDropdown('dropdown11')">
+                <h2>Aplikasi Mobile</h2>
+                <span class="dropdown-icon">&#9662;</span>
+            </div>
+            <div id="dropdown11" class="dropdown-content">
+                <div class="description-box">
+                    <p>Mengembangkan aplikasi mobile untuk platform Android atau iOS, mencakup desain UI/UX dan pemrograman menggunakan framework seperti Flutter atau Android Studio.</p>
+                </div>
+                <p>
+                    Modul Praktikum Aplikasi Mobile 1 
+                    <a href="javascript:void(0);" onclick="showNotification()" title="Open PDF"><i class="fas fa-folder-open"></i></a> 
+                    <a href="javascript:void(0);" onclick="showNotification()" title="Download PDF"><i class="fas fa-download"></i></a>
+                </p>
+                <p>
+                    Modul Praktikum Aplikasi Mobile 2 
+                    <a href="javascript:void(0);" onclick="showNotification()" title="Open PDF"><i class="fas fa-folder-open"></i></a> 
+                    <a href="javascript:void(0);" onclick="showNotification()" title="Download PDF"><i class="fas fa-download"></i></a>
+                </p>
+                <p>
+                    Modul Praktikum Aplikasi Mobile 3 
+                    <a href="javascript:void(0);" onclick="showNotification()" title="Open PDF"><i class="fas fa-folder-open"></i></a> 
+                    <a href="javascript:void(0);" onclick="showNotification()" title="Download PDF"><i class="fas fa-download"></i></a>
+                </p>
+                <p>
+                    Modul Praktikum Aplikasi Mobile 4 
+                    <a href="javascript:void(0);" onclick="showNotification()" title="Open PDF"><i class="fas fa-folder-open"></i></a> 
+                    <a href="javascript:void(0);" onclick="showNotification()" title="Download PDF"><i class="fas fa-download"></i></a>
+                </p>
+                <p>
+                    Modul Praktikum Aplikasi Mobile 5 
+                    <a href="javascript:void(0);" onclick="showNotification()" title="Open PDF"><i class="fas fa-folder-open"></i></a> 
+                    <a href="javascript:void(0);" onclick="showNotification()" title="Download PDF"><i class="fas fa-download"></i></a>
+                </p>
+                <p>
+                    Modul Praktikum Aplikasi Mobile 6 
+                    <a href="javascript:void(0);" onclick="showNotification()" title="Open PDF"><i class="fas fa-folder-open"></i></a> 
+                    <a href="javascript:void(0);" onclick="showNotification()" title="Download PDF"><i class="fas fa-download"></i></a>
+                </p>
+                <p>
+                    Modul Praktikum Aplikasi Mobile 7 
+                    <a href="javascript:void(0);" onclick="showNotification()" title="Open PDF"><i class="fas fa-folder-open"></i></a> 
+                    <a href="javascript:void(0);" onclick="showNotification()" title="Download PDF"><i class="fas fa-download"></i></a>
+                </p>
+                <p>
+                    Modul Praktikum Aplikasi Mobile 8 
+                    <a href="javascript:void(0);" onclick="showNotification()" title="Open PDF"><i class="fas fa-folder-open"></i></a> 
+                    <a href="javascript:void(0);" onclick="showNotification()" title="Download PDF"><i class="fas fa-download"></i></a>
+                </p>
+                <!-- Tambahkan konten lain sesuai kebutuhan -->
+                 
+            </div>
+        </div>
+          <!-- Notification Modal -->
+        <div class="notification" id="notification">
+           <p>File tidak tersedia</p>
+            <button onclick="closeNotification()">OK</button>
+       </div>
+
+        
+    </div>
+    
+    <footer  style="background-color: #f6f6f6; padding: 20px; text-align: center;">
+        <div class="container">
+            <ul class="tengah1" style="list-style-type: none; padding: 0;">
+                <li style="display: inline; margin-right: 20px;">
+                    <a href="index.html"><span>Beranda</span></a>
+                </li>
+                <li style="display: inline; margin-right: 20px;">
+                    <a href="about.html"><span>Tentang</span></a>
+                </li>
+                <li style="display: inline; margin-right: 20px;">
+                    <a href="news.html"><span>Berita</span></a>
+                </li>
+                <li style="display: inline; margin-right: 20px;">
+                    <a href="gallery.html"><span>Galeri</span></a>
+                </li>
+                <li style="display: inline;">
+                    <a href="CONTOH_DWEB/index.html"><span>Praktikum</span></a>
+                </li>
+            </ul>
+            <div style="margin-top: 20px;">
+                <h3>Kontak</h3>
+                <p>Email: labifunand@gmail.com</p>
+                <p>Telepon: +62 853-5697-1937</p>
+            </div>
+            <div style="margin-top: 20px;">
+                
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.3091786493706!2d100.4584783734983!3d-0.9153454353301367!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2fd4b7963e1ea631%3A0x452d09b61f76d6ec!2sFakultas%20Teknologi%20InformasiUniversitas%20Andalas!5e0!3m2!1sid!2sid!4v1730162754693!5m2!1sid!2sid" 
+                    width="100%" 
+                    height="200"  
+                    style="border:0;" 
+                    allowfullscreen 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+        <div style="margin-top: 20px; font-size: 0.9em; color: #287094;">
+            <p>&copy; 2024 Laboratorium Informatika - Universitas Andalas. Semua hak dilindungi.</p>
+        </div>
+    </footer>
+    <script src="pratikum.js"></script>
+</body>
+</html>

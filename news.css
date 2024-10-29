@@ -1,0 +1,271 @@
+/* Global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Atur body sebagai flex container */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    font-family: 'Poppins', sans-serif; /* Gunakan Poppins */
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header */
+
+
+.atas {
+    background-color: #023246;
+    color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding-top: 25px ; /* Padding atas dan bawah */
+    padding-bottom: 15px;
+    
+    font-size: 1.3rem;
+  }
+  
+  .atas nav {
+    display: flex;
+    align-items: center;
+  }
+  
+  
+  .atas nav ul {
+    list-style-type: none;
+    display: flex;
+    margin-left: auto; /* Moves the list to the right */
+  }
+  
+  .atas nav ul li {
+    margin-right: 50px;
+  }
+  
+  .atas nav ul li a {
+      font-family: 'Poppins', sans-serif;
+      font-size: 1.1rem;
+      font-weight: 500;
+      color: #E1E8F0;
+      text-decoration: none;
+      text-transform: uppercase;
+      padding-bottom: 8px; /* Menambahkan jarak antara teks dan underline */
+      position: relative;
+  }
+  
+  
+  
+  .atas nav ul li a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0; /* Tepat di bawah teks */
+    height: 4px; /* Ketebalan underline */
+    background-color: #E1E8F0; /* Warna underline */
+    transform: scaleX(0); /* Mulai dengan tidak terlihat */
+    transition: transform 0.3s ease;
+  }
+  
+  .atas nav ul li a:hover::after {
+    transform: scaleX(1); /* Memunculkan underline saat hover */
+  }
+  
+  .atas nav ul li a:hover {
+    color: #A9D4F1;
+  }
+  
+  .tengah1 {
+    font-weight: bold; /* Teks tebal */
+    display: inline-block; /* Allows for margin and padding */
+    position: relative; /* For positioning the pseudo-element */
+    color: #287094; /* Link color */
+    transition: color 0.3s ease; /* Smooth color transition */
+  }
+  
+  .tengah1 a {
+    text-decoration: none; /* No underline initially */
+    color: #287094; /* Sesuaikan dengan palet warna */
+    position: relative; /* Position relative for child elements */
+  }
+  
+  .tengah1 a:hover {
+    color: #003366; /* Ubah warna saat hover */
+  }
+  
+  .tengah1 a span {
+    position: relative; /* Positioning relative to the span */
+  }
+  
+  .tengah1 a span::after {
+    content: ""; /* Create an empty content */
+    display: block; /* Block-level element */
+    width: 100%; /* Full width of the text */
+    height: 2px; /* Thickness of the underline */
+    background-color: #287094; /* Color of the underline */
+    position: absolute; /* Positioning relative to the span */
+    bottom: -5px; /* Position it below the text */
+    left: 0; /* Align to the left */
+    transform: scaleX(0); /* Start with a scale of 0 (invisible) */
+    transition: transform 0.3s ease; /* Smooth scaling */
+  }
+  
+  .tengah1 a:hover span::after {
+    transform: scaleX(1); /* Scale to full width on hover */
+  }
+  
+  footer {
+    font-family: Montserrat; /* Font footer */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Bayangan halus */
+    padding: 20px; /* Tambahkan padding untuk jarak dalam */
+    background-color: #f6f6f6; /* Tambahkan latar belakang untuk kontras */
+  }
+  
+  
+  
+  
+
+.banner {
+    width: 100%;
+    height: 300px; /* Sesuaikan tinggi banner */
+    overflow: hidden;
+    margin-top: 70px;
+}
+
+.banner video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Video akan memenuhi area banner tanpa mengubah proporsi */
+}
+
+/* Kontainer utama agar mengambil ruang sisa */
+.main-container {
+    flex: 1;
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+}
+
+/* Highlighted News (col-9) */
+.col-9 {
+    flex: 3;
+    margin-right: 20px;
+}
+
+.highlighted-news {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.highlighted-news img {
+    width: 100%; /* Lebar otomatis sesuai kolom */
+    height: auto;
+    margin-bottom: 15px;
+    object-fit: cover; /* Untuk menjaga komposisi gambar */
+}
+
+.highlighted-news h2 {
+    color: #287094;
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.highlighted-news p {
+    font-size: 1.2em;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.read-more-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #287094;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.read-more-btn:hover {
+    background-color: #023246;
+}
+
+/* Smaller News (col-3) */
+.col-3 {
+    flex: 1;
+}
+
+.small-news {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.small-news h3 {
+    color: #287094;
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+/* Grid untuk menampilkan item berita kecil */
+.small-news-grid {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.small-news-item {
+    display: flex;
+    flex-direction: column; /* Menempatkan gambar di atas konten */
+    align-items: start; /* Menjaga konten rata kiri */
+}
+
+.small-news-item:last-child {
+    border-bottom: none; /* Hilangkan garis bawah pada item terakhir */
+}
+
+.small-news-item img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-bottom: 10px; /* Mengatur jarak dengan konten di bawahnya */
+}
+
+.news-info {
+    flex: 1;
+}
+
+.news-info a {
+    text-decoration: none;
+    color: #023246;
+    font-size: 0.9em;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.news-info a:hover {
+    color: #004080;
+}
+
+.news-info p {
+    font-size: 0.8em;
+    color: #666;
+    margin-top: 5px;
+}

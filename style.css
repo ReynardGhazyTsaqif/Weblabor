@@ -1,0 +1,337 @@
+body{
+  font-family: Poppins;
+}
+
+
+
+.banner {
+  height: 100vh; /* Full viewport height */
+  position: relative;
+  overflow: hidden;
+}
+
+.banner-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the image covers the full banner area */
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.banner-image.active {
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .banner {
+    height: 50vh; /* Menyesuaikan tinggi untuk layar kecil */
+  }
+
+  .banner-text {
+    font-size: 1rem; /* Menyesuaikan ukuran font untuk perangkat lebih kecil */
+  }
+}
+.banner-text {
+  position: absolute;
+  bottom: 20px; /* Atur jarak dari bawah */
+  left: 5%;
+  text-transform: uppercase;
+  color: white; /* Sesuaikan warna teks */
+  font-size: 2rem; /* Sesuaikan ukuran teks */
+  font-weight: bold;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5); /* Tambahkan bayangan untuk kontras */
+  overflow: hidden; /* Hide text that hasn’t been typed yet */
+  white-space: nowrap; /* Keep text on a single line */
+  border-right: 3px solid white; /* Blinking cursor effect */
+}
+
+@keyframes typing {
+  0% { width: 0; }
+  50% { width: 100%; }
+  100% { width: 0; } /* Menghilangkan teks kembali ke awal */
+}
+
+/* Keyframes efek berkedip */
+@keyframes blink {
+  from { border-color: transparent; }
+  to { border-color: white; }
+}
+
+/* Memulai kembali animasi dengan loop */
+.typing-animation {
+  animation: typing 4s steps(30, end) infinite, blink 0.7s step-end infinite alternate;
+}
+
+.paragraph{
+  text-align: justify;
+  font-family: Poppins;
+  font-size: larger;
+}
+.faculty {
+  font-family: "Poppins";
+  padding: 10px;
+  width: 100%;
+  margin: auto;
+  font-family: Poppins;
+  padding-top: 50px;
+  font-size: x-large;
+  
+}
+
+/* Container with red border */
+.faculty-highlights {
+  font-family: "Poppins";
+  padding: 10px;
+  width: 100%;
+  margin: auto;
+  font-family: Poppins;
+  font-size: larger;
+  
+}
+
+/* Title styling */
+.title {
+  font-size: 1.5em;
+  color: #003366; /* Navy Blue */
+  font-weight: bold;
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
+/* Horizontal line below the title */
+.title-line {
+  flex-grow: 1;
+  height: 3px;
+  background-color: red;
+  margin-left: 10px;
+}
+
+/* Subtitle text styling */
+.subtitle {
+  color: #023246;
+  font-size: 1em;
+  
+  
+}
+
+.transition-transform {
+  transition: transform 0.2s ease-in-out;
+}
+
+
+
+.judul {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 10px;
+  padding-top: 25px;
+  font-size: larger;
+  font-family: Montserrat;
+  
+}
+
+.judul a {
+    color: black; /* Warna teks judul */
+    text-decoration: none; /* Tidak ada garis bawah */
+    
+    transition: color 0.3s ease, transform 0.3s ease; /* Transisi untuk warna dan transformasi */
+    display: inline-block; /* Memungkinkan efek hover */
+}
+
+.judul a:hover {
+    color: #287094; /* Ubah warna saat hover */
+    transform: translateY(-2px); /* Geser sedikit ke atas saat hover */
+}
+.read-more a{
+  text-decoration: none;
+  color: #287094;
+}
+
+.read-more a:hover {
+  color: #003366; /* Ubah warna saat hover menjadi hitam */
+
+}
+
+.read-more {
+  text-decoration: none; /* No underline initially */
+  color: #287094; /* Link color */
+  font-weight: bold; /* Bold text */
+  display: inline-block; /* Allows for margin and padding */
+  position: relative; /* For positioning the pseudo-element */
+  
+  transition: color 0.3s ease; /* Smooth color transition */
+}
+
+
+
+/* Underline effect */
+.read-more::after {
+  content: ""; /* Create an empty content */
+  display: block; /* Block-level element */
+  width: 100%; /* Full width of the text */
+  height: 2px; /* Thickness of the underline */
+  background-color: #287094; /* Color of the underline */
+  position: absolute; /* Positioning relative to the .read-more element */
+  bottom: -5px; /* Position it below the text */
+  left: 0; /* Align to the left */
+  transform: scaleX(0); /* Start with a scale of 0 (invisible) */
+  transition: transform 0.3s ease; /* Smooth scaling */
+}
+
+.read-more:hover::after {
+  transform: scaleX(1); /* Scale to full width on hover */
+}
+
+
+
+/* Image container */
+.img-container {
+  width: 100%;
+  overflow: hidden;
+  
+}
+
+.img-container img {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.img-container:hover img {
+  transform: scale(1.1);
+}
+
+
+.img-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0); /* Mulai transparan */
+  transition: background-color 0.3s ease;
+  border-radius: 8px;
+}
+
+.img-container:hover img {
+  transform: scale(1.1);
+}
+
+.atas {
+  background-color: #023246;
+  color: black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding-top: 25px ; /* Padding atas dan bawah */
+  padding-bottom: 15px;
+  
+  font-size: 1.3rem;
+}
+
+.atas nav {
+  display: flex;
+  align-items: center;
+}
+
+
+.atas nav ul {
+  list-style-type: none;
+  display: flex;
+  margin-left: auto; /* Moves the list to the right */
+}
+
+.atas nav ul li {
+  margin-right: 50px;
+}
+
+.atas nav ul li a {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #E1E8F0;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding-bottom: 8px; /* Menambahkan jarak antara teks dan underline */
+    position: relative;
+}
+
+
+
+.atas nav ul li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0; /* Tepat di bawah teks */
+  height: 4px; /* Ketebalan underline */
+  background-color: #E1E8F0; /* Warna underline */
+  transform: scaleX(0); /* Mulai dengan tidak terlihat */
+  transition: transform 0.3s ease;
+}
+
+.atas nav ul li a:hover::after {
+  transform: scaleX(1); /* Memunculkan underline saat hover */
+}
+
+.atas nav ul li a:hover {
+  color: #A9D4F1;
+}
+
+.tengah1 {
+  font-weight: bold; /* Teks tebal */
+  display: inline-block; /* Allows for margin and padding */
+  position: relative; /* For positioning the pseudo-element */
+  color: #287094; /* Link color */
+  transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.tengah1 a {
+  text-decoration: none; /* No underline initially */
+  color: #287094; /* Sesuaikan dengan palet warna */
+  position: relative; /* Position relative for child elements */
+}
+
+.tengah1 a:hover {
+  color: #003366; /* Ubah warna saat hover */
+}
+
+.tengah1 a span {
+  position: relative; /* Positioning relative to the span */
+}
+
+.tengah1 a span::after {
+  content: ""; /* Create an empty content */
+  display: block; /* Block-level element */
+  width: 100%; /* Full width of the text */
+  height: 2px; /* Thickness of the underline */
+  background-color: #287094; /* Color of the underline */
+  position: absolute; /* Positioning relative to the span */
+  bottom: -5px; /* Position it below the text */
+  left: 0; /* Align to the left */
+  transform: scaleX(0); /* Start with a scale of 0 (invisible) */
+  transition: transform 0.3s ease; /* Smooth scaling */
+}
+
+.tengah1 a:hover span::after {
+  transform: scaleX(1); /* Scale to full width on hover */
+}
+
+footer {
+  font-family: Montserrat; /* Font footer */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Bayangan halus */
+  padding: 20px; /* Tambahkan padding untuk jarak dalam */
+  background-color: #f6f6f6; /* Tambahkan latar belakang untuk kontras */
+}
+
+
+

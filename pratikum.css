@@ -1,0 +1,298 @@
+* {
+    box-sizing: border-box;
+}
+
+
+.atas {
+    background-color: #023246;
+    color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding-top: 25px ; /* Padding atas dan bawah */
+    padding-bottom: 15px;
+    
+    font-size: 1.3rem;
+  }
+  
+  .atas nav {
+    display: flex;
+    align-items: center;
+  }
+  
+  
+  .atas nav ul {
+    list-style-type: none;
+    display: flex;
+    margin-left: auto; /* Moves the list to the right */
+  }
+  
+  .atas nav ul li {
+    margin-right: 50px;
+  }
+  
+  .atas nav ul li a {
+      font-family: 'Poppins', sans-serif;
+      font-size: 1.1rem;
+      font-weight: 500;
+      color: #E1E8F0;
+      text-decoration: none;
+      text-transform: uppercase;
+      padding-bottom: 8px; /* Menambahkan jarak antara teks dan underline */
+      position: relative;
+  }
+  
+  
+  
+  .atas nav ul li a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0; /* Tepat di bawah teks */
+    height: 4px; /* Ketebalan underline */
+    background-color: #E1E8F0; /* Warna underline */
+    transform: scaleX(0); /* Mulai dengan tidak terlihat */
+    transition: transform 0.3s ease;
+  }
+  
+  .atas nav ul li a:hover::after {
+    transform: scaleX(1); /* Memunculkan underline saat hover */
+  }
+  
+  .atas nav ul li a:hover {
+    color: #A9D4F1;
+  }
+  
+  .tengah1 {
+    font-weight: bold; /* Teks tebal */
+    display: inline-block; /* Allows for margin and padding */
+    position: relative; /* For positioning the pseudo-element */
+    color: #287094; /* Link color */
+    transition: color 0.3s ease; /* Smooth color transition */
+  }
+  
+  .tengah1 a {
+    text-decoration: none; /* No underline initially */
+    color: #287094; /* Sesuaikan dengan palet warna */
+    position: relative; /* Position relative for child elements */
+  }
+  
+  .tengah1 a:hover {
+    color: #003366; /* Ubah warna saat hover */
+  }
+  
+  .tengah1 a span {
+    position: relative; /* Positioning relative to the span */
+  }
+  
+  .tengah1 a span::after {
+    content: ""; /* Create an empty content */
+    display: block; /* Block-level element */
+    width: 100%; /* Full width of the text */
+    height: 2px; /* Thickness of the underline */
+    background-color: #287094; /* Color of the underline */
+    position: absolute; /* Positioning relative to the span */
+    bottom: -5px; /* Position it below the text */
+    left: 0; /* Align to the left */
+    transform: scaleX(0); /* Start with a scale of 0 (invisible) */
+    transition: transform 0.3s ease; /* Smooth scaling */
+  }
+  
+  .tengah1 a:hover span::after {
+    transform: scaleX(1); /* Scale to full width on hover */
+  }
+  
+  footer {
+    font-family: Montserrat; /* Font footer */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Bayangan halus */
+    padding: 20px; /* Tambahkan padding untuk jarak dalam */
+    background-color: #f6f6f6; /* Tambahkan latar belakang untuk kontras */
+    width: 100%;
+
+    display: flex; /* Membuat footer sebagai flex container */
+    flex-direction: column;
+    justify-content: center; /* Memusatkan konten secara horizontal */
+    align-items: center; /* Memusatkan konten secara vertikal */
+    text-align: center; /* Memastikan teks berada di tengah */
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column; /* Mengatur flex direction ke kolom */
+    justify-content: space-between; /* Mengatur ruang antara elemen */
+    min-height: 100vh; /* Setidaknya setinggi viewport */
+    margin: 0;
+    padding: 0;
+    background-color: #f6f6f6;
+    overflow-y: auto;
+    align-items: center;
+}
+
+.main-container {
+    flex: 1; /* Membuat kontainer utama mengambil ruang yang tersisa */
+}
+
+.container {
+    text-align: center;
+    width: 90%;
+    max-width: 800px;
+}
+
+h1 {
+    color: #287094;
+    margin-bottom: 20px;
+    margin-top: 125px;
+}
+
+.animated-circle {
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    border: 6px solid #023246;
+    border-radius: 50%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0.7;
+    animation: moveX 20s linear infinite alternate, moveY 15s linear infinite alternate;
+}
+
+/* Gerakan horizontal penuh */
+@keyframes moveX {
+    from { left: 0; }
+    to { left: calc(100vw - 192px); }
+}
+
+/* Gerakan vertikal penuh */
+@keyframes moveY {
+    from { top: 0; }
+    to { top: calc(100vh - 192px); }
+}
+
+.card {
+    background-color: rgba(246, 246, 246, 0.6);
+    color: #287094;
+    border-radius: 16px;
+    margin: 10px auto;
+    overflow: hidden;
+    backdrop-filter: blur(10px); /* Blur untuk latar belakang */
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+.card-header {
+    padding: 15px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    -webkit-backdrop-filter: blur(3px); 
+    background-color: rgba(246, 246, 246, 0.8);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+.card-header:hover {
+    background-color: rgba(246, 246, 246, 0.9);
+}
+
+.dropdown-icon {
+    font-size: 24px;
+    color: #023246;
+    transition: transform 0.5s ease;
+}
+
+.card.open .dropdown-icon {
+    transform: rotate(180deg);
+}
+
+.dropdown-content {
+    max-height: 0; /* Set max-height ke 0 saat tertutup */
+    overflow: hidden; /* Sembunyikan konten yang tidak terlihat */
+    background: rgba(255, 255, 255, 0.5); /* Warna background semi-transparan */
+    color: #287094;
+    padding: 15px; /* Padding yang sama untuk konsistensi */
+    font-size: 14px;
+    text-align: left;
+    backdrop-filter: blur(10px); /* Blur untuk efek kaca buram */
+    -webkit-backdrop-filter: blur(9px); /* Kompatibilitas untuk Safari */
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+    transition: max-height 0.5s ease, opacity 0.5s ease; /* Transisi untuk max-height dan opacity */
+    opacity: 0; /* Awalnya tidak terlihat */
+}
+
+.card.open .dropdown-content {
+    max-height: 500px; /* Atur max-height yang cukup besar untuk konten */
+    opacity: 1; /* Menjadikan dropdown terlihat */
+}
+
+
+.description-box {
+    margin-top: 10px;
+    padding: 15px;
+    background-color: #D4D4CE(246, 246, 246, 0.9);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    color: #287094;
+    font-size: 14px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-content a i {
+    color: #D4D4CE; /* Set the icon color */
+}
+
+.dropdown-content a:hover i {
+    color: #A9A9A9; /* Change color on hover for better visibility */
+    transition: 0.3S;
+}
+
+/* CSS for notification */
+.notification {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(40, 112, 148, 0.4); /* Warna latar belakang dengan transparansi */
+    border-radius: 12px; /* Sudut membulat */
+    padding: 20px;
+    z-index: 1000;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Bayangan lebih halus */
+    width: 90%; /* Lebar responsif */
+    max-width: 400px; /* Lebar maksimum */
+    text-align: center; /* Rata tengah untuk teks */
+    backdrop-filter: blur(10px); /* Blur untuk efek kaca buram */
+    -webkit-backdrop-filter: blur(5px); /* Kompatibilitas untuk Safari */
+}
+
+.notification p {
+    margin: 0; /* Menghapus margin default */
+    font-size: 16px; /* Ukuran font */
+    color: #f6f6f6; /* Warna teks */
+}
+
+.notification button {
+    margin-top: 15px; /* Jarak atas untuk tombol */
+    padding: 10px 15px; /* Padding untuk tombol */
+    background-color: #287094; /* Warna latar belakang tombol */
+    color: white; /* Warna teks tombol */
+    border: none; /* Menghapus border */
+    border-radius: 8px; /* Sudut membulat tombol */
+    cursor: pointer; /* Pointer saat hover */
+    transition: background-color 0.3s ease; /* Transisi untuk hover */
+}
+
+.notification button:hover {
+    background-color: #1e5b73; /* Warna saat hover */
+}
